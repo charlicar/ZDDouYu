@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		5BC283A31E6142DE00542A87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC283A21E6142DE00542A87 /* AppDelegate.swift */; };
-		5BC283A51E6142DE00542A87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC283A41E6142DE00542A87 /* ViewController.swift */; };
-		5BC283A81E6142DE00542A87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BC283A61E6142DE00542A87 /* Main.storyboard */; };
 		5BC283AA1E6142DF00542A87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BC283A91E6142DF00542A87 /* Assets.xcassets */; };
-		5BC283AD1E6142DF00542A87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BC283AB1E6142DF00542A87 /* LaunchScreen.storyboard */; };
+		5BC283BC1E61565200542A87 /* ZDTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC283BB1E61565200542A87 /* ZDTabBarController.swift */; };
+		5BC283BE1E61566600542A87 /* ZDNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC283BD1E61566600542A87 /* ZDNavigationController.swift */; };
+		5BC283D01E61577C00542A87 /* ZDHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC283CF1E61577C00542A87 /* ZDHomeViewController.swift */; };
+		5BC283D21E61578700542A87 /* ZDLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC283D11E61578700542A87 /* ZDLiveViewController.swift */; };
+		5BC283D41E61579600542A87 /* ZDFollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC283D31E61579600542A87 /* ZDFollowViewController.swift */; };
+		5BC283D61E6157A100542A87 /* ZDProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC283D51E6157A100542A87 /* ZDProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5BC2839F1E6142DE00542A87 /* ZDDouYu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZDDouYu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BC283A21E6142DE00542A87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5BC283A41E6142DE00542A87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5BC283A71E6142DE00542A87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5BC283A91E6142DF00542A87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5BC283AC1E6142DF00542A87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BC283AE1E6142DF00542A87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BC283BB1E61565200542A87 /* ZDTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDTabBarController.swift; sourceTree = "<group>"; };
+		5BC283BD1E61566600542A87 /* ZDNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDNavigationController.swift; sourceTree = "<group>"; };
+		5BC283CF1E61577C00542A87 /* ZDHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDHomeViewController.swift; sourceTree = "<group>"; };
+		5BC283D11E61578700542A87 /* ZDLiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDLiveViewController.swift; sourceTree = "<group>"; };
+		5BC283D31E61579600542A87 /* ZDFollowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDFollowViewController.swift; sourceTree = "<group>"; };
+		5BC283D51E6157A100542A87 /* ZDProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +61,168 @@
 			isa = PBXGroup;
 			children = (
 				5BC283A21E6142DE00542A87 /* AppDelegate.swift */,
-				5BC283A41E6142DE00542A87 /* ViewController.swift */,
-				5BC283A61E6142DE00542A87 /* Main.storyboard */,
+				5BC283B41E61560600542A87 /* Classes */,
 				5BC283A91E6142DF00542A87 /* Assets.xcassets */,
-				5BC283AB1E6142DF00542A87 /* LaunchScreen.storyboard */,
 				5BC283AE1E6142DF00542A87 /* Info.plist */,
 			);
 			path = ZDDouYu;
+			sourceTree = "<group>";
+		};
+		5BC283B41E61560600542A87 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5BC283B81E61560600542A87 /* Main */,
+				5BC283BF1E61575200542A87 /* Home */,
+				5BC283C31E61575C00542A87 /* Live */,
+				5BC283C71E61576200542A87 /* Follow */,
+				5BC283CB1E61576900542A87 /* Profile */,
+				5BC283BA1E61560600542A87 /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5BC283B81E61560600542A87 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5BC283BB1E61565200542A87 /* ZDTabBarController.swift */,
+				5BC283BD1E61566600542A87 /* ZDNavigationController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5BC283BA1E61560600542A87 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		5BC283BF1E61575200542A87 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5BC283C01E61575200542A87 /* Controller */,
+				5BC283C11E61575200542A87 /* Model */,
+				5BC283C21E61575200542A87 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5BC283C01E61575200542A87 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5BC283CF1E61577C00542A87 /* ZDHomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5BC283C11E61575200542A87 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5BC283C21E61575200542A87 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5BC283C31E61575C00542A87 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				5BC283C41E61575C00542A87 /* Controller */,
+				5BC283C51E61575C00542A87 /* Model */,
+				5BC283C61E61575C00542A87 /* View */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		5BC283C41E61575C00542A87 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5BC283D11E61578700542A87 /* ZDLiveViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5BC283C51E61575C00542A87 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5BC283C61E61575C00542A87 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5BC283C71E61576200542A87 /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+				5BC283C81E61576200542A87 /* Controller */,
+				5BC283C91E61576200542A87 /* Model */,
+				5BC283CA1E61576200542A87 /* View */,
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		5BC283C81E61576200542A87 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5BC283D31E61579600542A87 /* ZDFollowViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5BC283C91E61576200542A87 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5BC283CA1E61576200542A87 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5BC283CB1E61576900542A87 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				5BC283CC1E61576900542A87 /* Controller */,
+				5BC283CD1E61576900542A87 /* Model */,
+				5BC283CE1E61576900542A87 /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		5BC283CC1E61576900542A87 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5BC283D51E6157A100542A87 /* ZDProfileViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5BC283CD1E61576900542A87 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5BC283CE1E61576900542A87 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BC283AD1E6142DF00542A87 /* LaunchScreen.storyboard in Resources */,
 				5BC283AA1E6142DF00542A87 /* Assets.xcassets in Resources */,
-				5BC283A81E6142DE00542A87 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,31 +297,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BC283A51E6142DE00542A87 /* ViewController.swift in Sources */,
+				5BC283D21E61578700542A87 /* ZDLiveViewController.swift in Sources */,
+				5BC283BE1E61566600542A87 /* ZDNavigationController.swift in Sources */,
 				5BC283A31E6142DE00542A87 /* AppDelegate.swift in Sources */,
+				5BC283BC1E61565200542A87 /* ZDTabBarController.swift in Sources */,
+				5BC283D01E61577C00542A87 /* ZDHomeViewController.swift in Sources */,
+				5BC283D41E61579600542A87 /* ZDFollowViewController.swift in Sources */,
+				5BC283D61E6157A100542A87 /* ZDProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		5BC283A61E6142DE00542A87 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5BC283A71E6142DE00542A87 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		5BC283AB1E6142DF00542A87 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5BC283AC1E6142DF00542A87 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5BC283AF1E6142DF00542A87 /* Debug */ = {
@@ -260,6 +405,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = KWR5548ZR3;
 				INFOPLIST_FILE = ZDDouYu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -274,6 +420,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = KWR5548ZR3;
 				INFOPLIST_FILE = ZDDouYu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
